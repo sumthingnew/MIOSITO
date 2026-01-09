@@ -1,0 +1,321 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2759
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="it">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>PIVA.PRO | Il Sistema Operativo per Partite IVA</title>\
+    <script src="https://cdn.tailwindcss.com"></script>\
+    <script src="https://unpkg.com/lucide@latest"></script>\
+    <style>\
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Outfit:wght@200;400;600;900&display=swap');\
+        \
+        :root \{\
+            --neon-green: #00FF94;\
+            --deep-black: #050505;\
+            --clay: #121212;\
+        \}\
+\
+        body \{ \
+            font-family: 'Outfit', sans-serif;\
+            background-color: var(--deep-black);\
+            color: white;\
+            overflow-x: hidden;\
+        \}\
+\
+        .space-font \{ font-family: 'Space Grotesk', sans-serif; \}\
+\
+        .bento-grid \{\
+            display: grid;\
+            grid-template-columns: repeat(12, 1fr);\
+            gap: 1.5rem;\
+        \}\
+\
+        .bento-card \{\
+            background: var(--clay);\
+            border: 1px solid rgba(255,255,255,0.05);\
+            border-radius: 2.5rem;\
+            padding: 2.5rem;\
+            position: relative;\
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);\
+        \}\
+\
+        .bento-card:hover \{\
+            border-color: var(--neon-green);\
+            transform: translateY(-5px);\
+        \}\
+\
+        .highlight-text \{\
+            background: linear-gradient(90deg, #00FF94, #00B2FF);\
+            -webkit-background-clip: text;\
+            -webkit-text-fill-color: transparent;\
+        \}\
+\
+        input[type=range] \{\
+            appearance: none;\
+            width: 100%;\
+            height: 6px;\
+            background: rgba(255,255,255,0.1);\
+            border-radius: 10px;\
+            accent-color: var(--neon-green);\
+        \}\
+\
+        .btn-main \{\
+            background: var(--neon-green);\
+            color: black;\
+            font-weight: 800;\
+            padding: 1.2rem 2.5rem;\
+            border-radius: 1.2rem;\
+            transition: all 0.3s ease;\
+            text-transform: uppercase;\
+            letter-spacing: 1px;\
+        \}\
+\
+        .btn-main:hover \{\
+            box-shadow: 0 0 40px rgba(0, 255, 148, 0.4);\
+            transform: scale(1.03);\
+        \}\
+\
+        .glass-input \{\
+            background: rgba(255,255,255,0.03);\
+            border: 1px solid rgba(255,255,255,0.08);\
+            border-radius: 1.2rem;\
+            padding: 1.2rem;\
+            outline: none;\
+            transition: border 0.3s;\
+        \}\
+\
+        .glass-input:focus \{\
+            border-color: var(--neon-green);\
+        \}\
+\
+        /* Custom Scrollbar */\
+        ::-webkit-scrollbar \{ width: 8px; \}\
+        ::-webkit-scrollbar-track \{ background: var(--deep-black); \}\
+        ::-webkit-scrollbar-thumb \{ background: #333; border-radius: 10px; \}\
+    </style>\
+</head>\
+<body class="antialiased">\
+\
+    <!-- Navbar -->\
+    <nav class="fixed top-0 w-full z-50 px-6 md:px-12 py-8 flex justify-between items-center backdrop-blur-xl border-b border-white/5">\
+        <div class="flex items-center gap-3">\
+            <div class="w-10 h-10 bg-[#00FF94] rounded-xl flex items-center justify-center shadow-[0_0_20px_rgba(0,255,148,0.3)]">\
+                <i data-lucide="trending-up" class="text-black" size="20"></i>\
+            </div>\
+            <span class="text-2xl font-black space-font tracking-tighter">PIVA<span class="text-[#00FF94]">.</span>PRO</span>\
+        </div>\
+\
+        <div class="hidden md:flex gap-10 font-bold text-[10px] tracking-[0.2em] uppercase opacity-70">\
+            <a href="#simulator" class="hover:text-[#00FF94] transition-colors">Simulatore</a>\
+            <a href="#features" class="hover:text-[#00FF94] transition-colors">Ecosistema</a>\
+            <a href="#academy" class="hover:text-[#00FF94] transition-colors">Academy</a>\
+        </div>\
+\
+        <button onclick="document.getElementById('pricing').scrollIntoView(\{behavior: 'smooth'\})" class="btn-main text-[10px] py-3 px-6">\
+            Entra in Miniera\
+        </button>\
+    </nav>\
+\
+    <main class="pt-40 pb-20 px-6 md:px-12 max-w-[1400px] mx-auto">\
+        \
+        <div class="bento-grid">\
+            \
+            <!-- Hero Header -->\
+            <div class="bento-card col-span-12 lg:col-span-8 flex flex-col justify-center min-h-[450px] bg-gradient-to-br from-[#121212] to-[#080808]">\
+                <div class="relative z-10">\
+                    <span class="bg-[#00FF94]/10 text-[#00FF94] text-[10px] font-bold px-4 py-2 rounded-full uppercase tracking-widest mb-6 inline-block">\
+                        Disponibile Ora - Regime Forfettario 2024\
+                    </span>\
+                    <h1 class="text-5xl md:text-7xl font-black mb-8 leading-[0.9] space-font">\
+                        SMETTI DI <br><span class="highlight-text">IMPROVVISARE.</span>\
+                    </h1>\
+                    <p class="text-lg opacity-50 max-w-md mb-10 leading-relaxed font-light">\
+                        Il primo cockpit finanziario progettato per chi vuole scalare la propria Partita IVA proteggendo ogni singolo euro di profitto.\
+                    </p>\
+                    <div class="flex flex-wrap gap-4">\
+                        <button class="bg-white text-black px-10 py-4 rounded-2xl font-black flex items-center gap-3 hover:bg-[#00FF94] transition-all">\
+                            Inizia Gratis <i data-lucide="zap" size="18"></i>\
+                        </button>\
+                    </div>\
+                </div>\
+            </div>\
+\
+            <!-- AI Assistant Albertino -->\
+            <div class="bento-card col-span-12 lg:col-span-4 bg-[#00FF94]/5 border-none flex flex-col">\
+                <div class="flex items-center gap-4 mb-8">\
+                    <div class="w-12 h-12 rounded-full bg-[#00FF94] flex items-center justify-center">\
+                        <i data-lucide="bot" class="text-black"></i>\
+                    </div>\
+                    <div>\
+                        <h3 class="font-bold text-lg">Albertino AI</h3>\
+                        <p class="text-[10px] text-[#00FF94] font-bold uppercase tracking-widest">Tax Advisor Attivo</p>\
+                    </div>\
+                </div>\
+                <div class="bg-black/40 p-5 rounded-2xl text-sm leading-relaxed mb-6 border border-white/5 italic opacity-80">\
+                    "Sto monitorando il tuo tetto di 85k. Se fatturi altri 3.000\'80 questo mese, ti consiglio di anticipare l'acquisto del nuovo MacBook per ottimizzare i costi."\
+                </div>\
+                <div class="mt-auto relative">\
+                    <input type="text" placeholder="Chiedi aiuto fiscale..." class="w-full glass-input text-sm pr-12">\
+                    <i data-lucide="send" class="absolute right-4 top-1/2 -translate-y-1/2 text-[#00FF94] cursor-pointer"></i>\
+                </div>\
+            </div>\
+\
+            <!-- Tax Simulator (The Core Tool) -->\
+            <div id="simulator" class="bento-card col-span-12 lg:col-span-9">\
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">\
+                    <div class="lg:col-span-2">\
+                        <h3 class="text-3xl font-black space-font mb-2">Simulatore</h3>\
+                        <p class="text-[10px] font-bold opacity-30 tracking-[0.3em] uppercase mb-12">Precisione Fiscale 2024</p>\
+                        \
+                        <div class="space-y-10">\
+                            <div class="bg-black/20 p-8 rounded-3xl border border-white/5">\
+                                <div class="flex justify-between mb-6">\
+                                    <span class="text-xs font-bold opacity-40 uppercase">Fatturato Annuo Lordo</span>\
+                                    <span id="rev-val" class="text-2xl font-black text-[#00FF94] space-font">\'80 50.000</span>\
+                                </div>\
+                                <input type="range" min="5000" max="85000" step="1000" value="50000" oninput="updateSim(this.value)" class="mb-2">\
+                                <div class="flex justify-between text-[10px] font-bold opacity-20">\
+                                    <span>5K</span>\
+                                    <span>85K (Limite Forfettario)</span>\
+                                </div>\
+                            </div>\
+\
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">\
+                                <div class="flex flex-col">\
+                                    <label class="text-[10px] font-bold opacity-30 mb-3 uppercase tracking-widest">Categoria Attivit\'e0</label>\
+                                    <select id="ateco" onchange="updateSim()" class="glass-input font-bold appearance-none cursor-pointer">\
+                                        <option value="0.67">Software / Digital (67%)</option>\
+                                        <option value="0.78">Consulenza / Servizi (78%)</option>\
+                                        <option value="0.40">Commercio (40%)</option>\
+                                    </select>\
+                                </div>\
+                                <div class="flex flex-col">\
+                                    <label class="text-[10px] font-bold opacity-30 mb-3 uppercase tracking-widest">Anzianit\'e0 P.IVA</label>\
+                                    <select id="rate" onchange="updateSim()" class="glass-input font-bold appearance-none cursor-pointer">\
+                                        <option value="0.05">Nuova Attivit\'e0 (5%)</option>\
+                                        <option value="0.15">Standard (15%)</option>\
+                                    </select>\
+                                </div>\
+                            </div>\
+                        </div>\
+                    </div>\
+\
+                    <div class="bg-[#00FF94] rounded-[2.5rem] p-10 text-black flex flex-col justify-between shadow-[0_20px_60px_rgba(0,255,148,0.15)]">\
+                        <div>\
+                            <p class="text-[10px] font-black uppercase opacity-40 mb-1">Guadagno Mensile Pulito</p>\
+                            <h4 id="net-monthly" class="text-5xl font-black space-font tracking-tighter">\'80 3.250</h4>\
+                        </div>\
+                        \
+                        <div class="space-y-4 border-t border-black/10 pt-8 mt-8">\
+                            <div class="flex justify-between items-center">\
+                                <span class="text-[10px] font-bold opacity-60 uppercase">Tasse</span>\
+                                <span id="tax-total" class="font-black">\'80 250</span>\
+                            </div>\
+                            <div class="flex justify-between items-center">\
+                                <span class="text-[10px] font-bold opacity-60 uppercase">Contributi INPS</span>\
+                                <span id="inps-total" class="font-black">\'80 680</span>\
+                            </div>\
+                        </div>\
+\
+                        <button class="w-full bg-black text-white py-4 rounded-xl mt-10 text-[10px] font-black uppercase tracking-widest hover:opacity-80 transition-opacity">\
+                            Report PDF Completo\
+                        </button>\
+                    </div>\
+                </div>\
+            </div>\
+\
+            <!-- Feature: Academy -->\
+            <div id="academy" class="bento-card col-span-12 lg:col-span-3 flex flex-col justify-between overflow-hidden">\
+                <i data-lucide="graduation-cap" class="text-[#00FF94] mb-6" size="32"></i>\
+                <div>\
+                    <h3 class="text-xl font-bold mb-3">Golden Academy</h3>\
+                    <p class="text-sm opacity-40 leading-relaxed mb-6">Impariamo come trasformare le tasse in investimenti reali.</p>\
+                </div>\
+                <div class="bg-white/5 -mx-10 p-6 flex items-center gap-4 border-t border-white/5">\
+                    <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center"><i data-lucide="play" size="14"></i></div>\
+                    <span class="text-[10px] font-bold uppercase tracking-wider">24 Video Lezioni</span>\
+                </div>\
+            </div>\
+\
+            <!-- Feature: Protection -->\
+            <div class="bento-card col-span-12 lg:col-span-3 flex flex-col justify-between">\
+                <i data-lucide="shield-check" class="text-blue-400 mb-6" size="32"></i>\
+                <div>\
+                    <h3 class="text-xl font-bold mb-3">Scudo Fiscale</h3>\
+                    <p class="text-sm opacity-40 leading-relaxed">Alert automatici per scadenze e verifiche di conformit\'e0.</p>\
+                </div>\
+                <div class="flex -space-x-2">\
+                    <div class="w-8 h-8 rounded-full bg-gray-800 border-2 border-[#121212]"></div>\
+                    <div class="w-8 h-8 rounded-full bg-gray-700 border-2 border-[#121212]"></div>\
+                    <div class="w-8 h-8 rounded-full bg-gray-600 border-2 border-[#121212]"></div>\
+                    <div class="ml-4 flex items-center"><span class="text-[10px] font-bold opacity-40">+1.2k protetti</span></div>\
+                </div>\
+            </div>\
+\
+            <!-- Pricing Section -->\
+            <div id="pricing" class="bento-card col-span-12 lg:col-span-6 bg-white text-black flex flex-col items-center justify-center text-center">\
+                <h3 class="text-4xl font-black space-font mb-4 tracking-tighter">Accedi alla Miniera.</h3>\
+                <p class="text-sm font-medium opacity-60 mb-10 max-w-xs uppercase tracking-tighter">Tutto incluso: Software, AI, Academy e Community.</p>\
+                \
+                <div class="flex items-baseline gap-2 mb-10">\
+                    <span class="text-7xl font-black space-font italic">\'8049</span>\
+                    <span class="text-xl opacity-40 font-bold">/mese</span>\
+                </div>\
+\
+                <ul class="text-left space-y-4 mb-10 text-xs font-bold">\
+                    <li class="flex items-center gap-3"><i data-lucide="check" size="16" class="text-green-600"></i> Dashboard Real-time</li>\
+                    <li class="flex items-center gap-3"><i data-lucide="check" size="16" class="text-green-600"></i> AI Tax Advisor Illimitato</li>\
+                    <li class="flex items-center gap-3"><i data-lucide="check" size="16" class="text-green-600"></i> Strategie d'Investimento</li>\
+                </ul>\
+\
+                <button class="btn-main w-full max-w-sm bg-black text-white hover:bg-[#00FF94] hover:text-black">\
+                    Attiva Abbonamento\
+                </button>\
+            </div>\
+\
+        </div>\
+\
+        <footer class="mt-40 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 opacity-30 text-[10px] font-bold uppercase tracking-widest">\
+            <p>\'a9 2024 PIVA.PRO - Tutti i diritti riservati</p>\
+            <div class="flex gap-10">\
+                <a href="#">Privacy</a>\
+                <a href="#">Termini</a>\
+                <a href="#">Supporto</a>\
+            </div>\
+        </footer>\
+    </main>\
+\
+    <script>\
+        function updateSim(val) \{\
+            const revenue = val ? parseFloat(val) : parseFloat(document.querySelector('input[type=range]').value);\
+            const coef = parseFloat(document.getElementById('ateco').value);\
+            const rate = parseFloat(document.getElementById('rate').value);\
+            \
+            document.getElementById('rev-val').innerText = `\'80 $\{revenue.toLocaleString('it-IT')\}`;\
+            \
+            // Logica Regime Forfettario\
+            const taxable = revenue * coef;\
+            const inps = taxable * 0.2607; // Gestione Separata INPS indicativa\
+            const tax = (taxable - inps) * rate;\
+            const netYear = revenue - inps - tax;\
+            const netMonth = netYear / 12;\
+\
+            document.getElementById('net-monthly').innerText = `\'80 $\{Math.round(netMonth).toLocaleString('it-IT')\}`;\
+            document.getElementById('tax-total').innerText = `\'80 $\{Math.round(tax).toLocaleString('it-IT')\}`;\
+            document.getElementById('inps-total').innerText = `\'80 $\{Math.round(inps).toLocaleString('it-IT')\}`;\
+        \}\
+\
+        window.onload = () => \{\
+            lucide.createIcons();\
+            updateSim(50000);\
+        \};\
+    </script>\
+</body>\
+</html>}
